@@ -1,5 +1,6 @@
 class Program1 extends ConsoleProgram {
 
+
   /**
   * Demonstration of logical operators `&&`, `||`, `!`
   * @author:
@@ -7,14 +8,16 @@ class Program1 extends ConsoleProgram {
   
   public void run() {
     
-    // start coding here
-    int a = 5;
-    System.out.println(((1 < a) && (a < 10)));
-    System.out.println((1 < a) && (a < 4));
+    Integer intEntered = readInt("Enter the PIN. ");
+    Integer intPassword = 1234;
+    Boolean blnPasswordTrue = (intEntered == intPassword);
+    if (blnPasswordTrue == true) {
 
-    System.out.println((a == 4) || (a == 5));
-    System.out.println((a > 2) || (a < 10));
-    System.out.println ((a >= 6) || (a <=4));
+      System.out.println("Nice");
+      
+    } else {
+      System.out.println("Bruh mistake");
+    }
     
   }
 }
